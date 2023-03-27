@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBE7E4FE-964C-48E4-9EC0-357FD5B53A7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RG</RootNamespace>
+    <AssemblyName>RG</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.4\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="packages\Guna.UI2.WinForms.2.0.4.4\.signature.p7s" />
+    <None Include="packages\Guna.UI2.WinForms.2.0.4.4\Guna.UI2.WinForms.2.0.4.4.nupkg" />
+    <None Include="packages\Guna.UI2.WinForms.2.0.4.4\README.md" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ConcertOne.ttf" />
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboards_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboards_unactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\games_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\games_unactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like_unactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group_unactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_unactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_unactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-03-17_16-23-22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-03-17_16-23-221.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\place4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\Guna.UI2.WinForms.2.0.4.4\icon.png" />
+    <Content Include="packages\Guna.UI2.WinForms.2.0.4.4\lib\net40\Guna.UI2.dll" />
+    <Content Include="packages\Guna.UI2.WinForms.2.0.4.4\lib\net45\Guna.UI2.dll" />
+    <Content Include="packages\Guna.UI2.WinForms.2.0.4.4\lib\net461\Guna.UI2.dll" />
+    <Content Include="packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll" />
+    <Content Include="packages\Guna.UI2.WinForms.2.0.4.4\lib\net48\Guna.UI2.dll" />
+    <Content Include="packages\Guna.UI2.WinForms.2.0.4.4\lib\net6.0-windows7.0\Guna.UI2.dll" />
+    <Content Include="packages\Guna.UI2.WinForms.2.0.4.4\lib\net7.0-windows7.0\Guna.UI2.dll" />
+    <Content Include="packages\Guna.UI2.WinForms.2.0.4.4\lib\netcoreapp3.1\Guna.UI2.dll" />
+    <Content Include="packages\Guna.UI2.WinForms.2.0.4.4\LICENSE.txt" />
+    <None Include="Resources\little_hightmares.jpg" />
+    <None Include="Resources\limbo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
