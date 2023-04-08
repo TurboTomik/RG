@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Drawing.Text;
 using System.IO;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace RG
 {
     public partial class Form2 : Form
     {
+
         public Form2()
         {
             InitializeComponent();
@@ -28,7 +30,7 @@ namespace RG
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -92,6 +94,11 @@ namespace RG
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel11_Paint(object sender, PaintEventArgs e)
         {
 
         }
